@@ -45,9 +45,42 @@ class DayThreeActivity : AppCompatActivity() {
             AlertDialog.Builder(this@DayThreeActivity)
                 .setTitle("Confirmation Dialog")
                 .setMessage("Content of a confirmation dialog")
-                .setPositiveButton("Confirm", DialogInterface.OnClickListener{ dialogInterface: DialogInterface, i: Int -> Toast.makeText(this@DayThreeActivity,"Confirmation successfull!",Toast.LENGTH_LONG).show() })
-                .setNegativeButton("Decline",DialogInterface.OnClickListener{ dialog: DialogInterface?, which: Int -> Toast.makeText(this@DayThreeActivity,"Request declined",Toast.LENGTH_LONG).show() })
+                .setPositiveButton("Confirm") { dialogInterface: DialogInterface, i: Int ->
+                    Toast.makeText(
+                        this@DayThreeActivity,
+                        "Confirmation successfull!",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+                .setNegativeButton("Decline") { dialog: DialogInterface?, which: Int ->
+                    Toast.makeText(
+                        this@DayThreeActivity,
+                        "Request declined",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
                 .show()
+        })
+
+        val toastButton: Button = findViewById<Button>(R.id.button20)
+        toastButton.setOnClickListener(View.OnClickListener {
+            Toast.makeText(this@DayThreeActivity,"Sample Toast Message!",Toast.LENGTH_SHORT).show()
+        })
+
+        val feedbackBottomSheetButton: Button = findViewById<Button>(R.id.button21)
+        feedbackBottomSheetButton.setOnClickListener(View.OnClickListener {
+            val feedbackBottomSheet = FeedbackBottomSheet()
+            feedbackBottomSheet.show(supportFragmentManager,"FeedbackSheet")
+        })
+
+        val navigationViewsButton: Button = findViewById<Button>(R.id.button22)
+        navigationViewsButton.setOnClickListener(View.OnClickListener {
+            startActivity(Intent(this@DayThreeActivity,NavigationViewsActivity::class.java))
+        })
+
+        val tabViewsButton: Button = findViewById<Button>(R.id.button23)
+        tabViewsButton.setOnClickListener(View.OnClickListener {
+            startActivity(Intent(this@DayThreeActivity,TabLayoutActivity::class.java))
         })
 
     }

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.LayoutRevision"
         tools:targetApi="31">
         <activity
+            android:name=".TabLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationViewsActivity"
+            android:exported="false" />
+        <activity
             android:name=".RecyclerViewActivity"
             android:exported="false" />
         <activity
