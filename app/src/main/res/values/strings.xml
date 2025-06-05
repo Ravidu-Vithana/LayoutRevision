@@ -9,6 +9,7 @@
     <string name="main_hint1">John@gmail.com</string>
     <string name="main_btn1">Login</string>
     <string name="main_btn2">Create an Account</string>
+    <string name="main_btn3">Go to Day 3</string>
 
     <string name="linearlayout_text1">Welcome Back!</string>
     <string name="linearlayout_text2">Your items are listed below.</string>
@@ -27,6 +28,25 @@
     <string name="tablelayout_text8">Heading 3</string>
     <string name="tablelayout_text9">Following content is positioned using relative layout</string>
     <string name="tablelayout_btn1">Go to Table and Relative Layout</string>
+
+    <string name="dayThree_text1">Day 03 Content</string>
+    <string name="dayThree_btn1">List View</string>
+    <string name="dayThree_btn2">Recycler View</string>
+    <string name="dayThree_btn3.1">Dialog 1</string>
+    <string name="dayThree_btn3.2">Dialog 2</string>
+    <string name="dayThree_btn3.3">Dialog 3</string>
+    <string name="dayThree_btn4">Toasts</string>
+    <string name="dayThree_btn5">Bottom Sheets</string>
+    <string name="dayThree_btn6">Navigation Drawer</string>
+    <string name="dayThree_btn7">Tabs</string>
+    <string name="dayThree_btn8">Material Designs</string>
+    <string name="dayThree_btn9">Animations</string>
+
+    <string name="listView_text1">ListView</string>
+    <string name="listView_text2">Below content is displayed using listview</string>
+
+    <string name="recyclerView_text1">RecyclerView</string>
+    <string name="recyclerView_text2">Below content is displayed using recyclerview</string>
 
     <string name="itemcard_text1">Product Name:</string>
     <string name="itemcard_text2">Sample Name</string>

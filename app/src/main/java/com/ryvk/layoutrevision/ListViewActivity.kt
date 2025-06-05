@@ -1,35 +1,37 @@
 package com.ryvk.layoutrevision
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
-import android.widget.CheckBox
+import android.widget.ArrayAdapter
+import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class ListViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_list_view)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        var wordList = arrayOf(
+            "Software Engineer",
+            "Development",
+            "Desktop",
+            "Computer",
+            "Developer",
+            "Business",
+            "System",
+            "Platform",
+            "Engineering"
+        )
 
-        val loginButton: Button = findViewById<Button>(R.id.button)
-        loginButton.setOnClickListener(View.OnClickListener {
-            startActivity(Intent(this@MainActivity,LinearLayoutActivity::class.java))
-        })
-
-        val goToDay3: Button = findViewById<Button>(R.id.button4)
-        goToDay3.setOnClickListener(View.OnClickListener {
-            startActivity(Intent(this@MainActivity,DayThreeActivity::class.java))
-        })
-
+        val arrayAdapter = ArrayAdapter(this,R.layout.dropdown_item,wordList)
+        val listView: ListView = findViewById<ListView>(R.id.listView)
+        listView.adapter = arrayAdapter
     }
 }
