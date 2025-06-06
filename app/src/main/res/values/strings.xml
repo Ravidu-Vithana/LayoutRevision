@@ -53,6 +53,9 @@
     <string name="feedbackBottomSheet_edittext">Write something...</string>
     <string name="feedbackBottomSheet_btn1">Submit</string>
 
+    <string name="animations_btn1">Show Animation 1</string>
+    <string name="animations_btn2">Show Animation 2</string>
+
     <string name="itemcard_text1">Product Name:</string>
     <string name="itemcard_text2">Sample Name</string>
     <string name="itemcard_text3">Price:</string>

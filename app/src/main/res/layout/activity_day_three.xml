@@ -116,15 +116,6 @@
             app:cornerRadius="10dp" />
 
         <Button
-            android:id="@+id/button24"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:backgroundTint="@color/blue1"
-            android:text="@string/dayThree_btn8"
-            app:cornerRadius="10dp" />
-
-        <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

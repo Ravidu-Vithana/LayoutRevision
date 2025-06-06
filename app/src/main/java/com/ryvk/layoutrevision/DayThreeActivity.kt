@@ -83,5 +83,10 @@ class DayThreeActivity : AppCompatActivity() {
             startActivity(Intent(this@DayThreeActivity,TabLayoutActivity::class.java))
         })
 
+        val animationsButton: Button = findViewById<Button>(R.id.button5)
+        animationsButton.setOnClickListener(View.OnClickListener {
+            startActivity(Intent(this@DayThreeActivity,AnimationsActivity::class.java))
+        })
+
     }
 }
